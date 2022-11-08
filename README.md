@@ -1,1 +1,1 @@
-# star-music
+# Star Music
