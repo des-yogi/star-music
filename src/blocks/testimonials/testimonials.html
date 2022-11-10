@@ -1,0 +1,70 @@
+<!--DEV
+@ @include('blocks/testimonials/testimonials.html')
+-->
+
+<section class="container  testimonials">
+  <h2 class="testimonials__title">
+    <span>Testimonials</span>
+    What our say
+  </h2>
+  <div class="testimonials__inner">
+    <div class="testimonials__col">
+      <div id="testimonialsCarusel" class="carousel slide  testimonials__slider">
+        <div class="carousel-indicators  testimonials__bullets">
+          <button class="testimonials__bullet active" type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+          <button class="testimonials__bullet" type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button class="testimonials__bullet" type="button" data-bs-target="#testimonialsCarusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote class="testimonials__blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+              <p class="testimonials__author">
+                <!-- Если нет фото, использовать "no-author img" -->
+                <span class="testimonials__avatar b-lazy" data-src="img/author-img.jpg" style="background-size:72px;" role="presentation"></span>
+                <span class="testimonials__subscr">
+                  <span class="testimonials__name">Eleanor Pena</span>
+                  <span class="testimonials__info">Any info-text</span>
+                </span>
+              </p>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="testimonials__blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+              <p class="testimonials__author">
+                <!-- Если нет фото, использовать "no-author img" -->
+                <span class="testimonials__avatar b-lazy" data-src="img/noauthor-img.jpg" style="background-size:72px;" role="presentation"></span>
+                <span class="testimonials__subscr">
+                  <span class="testimonials__name">Eleanor Pena</span>
+                  <span class="testimonials__info">Any info-text</span>
+                </span>
+              </p>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="testimonials__blockquote">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+              <p class="testimonials__author">
+                <!-- Если нет фото, использовать "no-author img" -->
+                <span class="testimonials__avatar b-lazy" data-src="img/noauthor-img.jpg" style="background-size:72px;" role="presentation"></span>
+                <span class="testimonials__subscr">
+                  <span class="testimonials__name">Eleanor Pena</span>
+                  <span class="testimonials__info">Any info-text</span>
+                </span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+        <button class="carousel-control-prev  testimonials__prev" type="button" data-bs-target="#testimonialsCarusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon  testimonials__icon  testimonials__icon--prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next  testimonials__next" type="button" data-bs-target="#testimonialsCarusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon  testimonials__icon  testimonials__icon--next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+.events {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @media (min-width: $screen-xl) {
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position:
+      left top 350px,
+      right top 560px,
+      left bottom 675px,
+      right bottom 990px;
+    background-size:
+      105px 225px,
+      122px 287px,
+      122px 287px,
+      105px 225px;
+    background-image:
+      url(../img/dots-left.svg),
+      url(../img/circles-right.svg),
+      url(../img/circles-left.svg),
+      url(../img/dots-right.svg);
+  }
+
+
+  &__title {
+    text-align: center;
+  }
+
+  &__item {
+    @include col(xs, 12);
+    @include col-offset(md, 2);
+    @include col(md, 8);
+
+    & + & {
+      margin-top: 30px;
+
+      @media (min-width: $screen-xl) {
+        margin-top: 48px;
+      }
+    }
+  }
+}

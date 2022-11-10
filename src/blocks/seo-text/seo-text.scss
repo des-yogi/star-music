@@ -1,0 +1,28 @@
+.seo-text {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-top: 160px;
+    margin-bottom: 160px;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col-offset(md, 2);
+    @include col(md, 8);
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+}

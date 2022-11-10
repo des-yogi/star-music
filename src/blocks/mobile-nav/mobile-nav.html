@@ -1,0 +1,50 @@
+<!--DEV
+@ @include('blocks/mobile-nav/mobile-nav.html')
+-->
+
+<!-- Modal -->
+<div class="modal fade  mobile-nav" id="mobileNav" tabindex="-1" aria-labelledby="mobileNavLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+
+      <div class="modal-header  mobile-nav__header">
+        <h5 class="visually-hidden" id="mobileNavLabel">Мобильное меню</h5>
+        @@include('../../blocks/logo/logo.html', {
+          "addClass": "logo--mob"
+        })
+        <button type="button" class="close" data-bs-dismiss="modal">
+          <span class="visually-hidden">Закрыть моб. меню</span>
+          <svg width="24" height="24" aria-hidden="true" focusable="false"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close-round"></use></svg>
+        </button>
+      </div>
+
+      <div class="modal-body  mobile-nav__body">
+        <nav class="mobile-nav__nav">
+          <ul class="list-nostyled  mobile-nav__list">
+            <li class="mobile-nav__item  active">
+              <a class="mobile-nav__link">Concerts</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Gallery</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Archive</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">About</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        @@include('../../blocks/socials/socials.html', {
+          "addClass": "socials--mob-menu"
+        })
+      </div>
+
+
+    </div>
+  </div>
+</div>
