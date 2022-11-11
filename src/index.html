@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Home page</title>
+  <title>Star Music Home page</title>
   @@include('_include/page_head.html')
 </head>
 
@@ -15,14 +15,74 @@
     <div class="page__content">
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main class="main">
 
-        <div class="container">
+        <div class="container  events">
+          <h1 class="events__title">🤘 Top Events Now</h1>
 
+          <ul class="list-nostyled  row  events__list">
+            <li class="events__item">
+              @@include('blocks/event-card/event-card.html', {
+                "imgSrc": "event-1",
+                "title": "Lyapis Trubetskoy",
+                "descr": "Sergei Mikhalok with the legendary band Lyapis Trubetskoy",
+                "linkText": "ΓΙΑ ΑΓΟΡΑ ΕΙΣΙΤΗΡΙΟΥ",
+                "linkDisabledStyle": ""
+              })
+            </li>
 
+            <li class="events__item">
+              @@include('blocks/event-card/event-card.html', {
+                "imgSrc": "event-2",
+                "title": "Oksana Muha",
+                "descr": "Sergei Mikhalok with the legendary band Lyapis Trubetskoy",
+                "linkText": "Купить билет",
+                "linkDisabledStyle": ""
+              })
+            </li>
+
+            <li class="events__item">
+              @@include('blocks/event-card/event-card.html', {
+                "imgSrc": "event-3",
+                "title": "Okean Elzy - Live Sound",
+                "descr": "Presentation of the secret album!",
+                "linkText": "Buy Ticket",
+                "linkDisabledStyle": ""
+              })
+            </li>
+
+            <li class="events__item">
+              @@include('blocks/event-card/event-card.html', {
+                "imgSrc": "event-4",
+                "title": "Swan Lake ballet",
+                "descr": "World ballet theater!",
+                "linkText": "sold out",
+                "linkDisabledStyle": "btn--disabled"
+              })
+            </li>
+          </ul>
         </div>
 
+        <section class="container  instagram-block">
+          <h2 class="visually-hidden">Лента Инстаграм</h2>
+          <p class="h3  instagram-block__subscribe">Subscribe to <a href="#" target="_blank" rel="nofollow noopener">@starmusiceventscyprus</a> to keep up 🤩</p>
+          <div style="height: 600px; background: lightgray;"></div>
+        </section>
+
+        <section class="container  seo-text">
+          <div class="row">
+            <div class="seo-text__col">
+              <h2 class="seo-text__title">SEO Text</h2>
+              <p>At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
+            </div>
+          </div>
+        </section>
+
+        @@include('blocks/testimonials/testimonials.html')
+
       </main>
+
+      @@include('blocks/subscribe-block/subscribe-block.html')
 
     </div>
 
@@ -31,6 +91,8 @@
     </div>
 
   </div>
+
+  @@include('blocks/mobile-nav/mobile-nav.html')
 
   @@include('_include/page_bottom.html')
 

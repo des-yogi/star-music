@@ -1,8 +1,131 @@
-// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-footer {
+  padding-top: 40px;
+  color: $white;
+  background-color: $secondary-color;
+
+  @media (min-width: $screen-md) {
+    padding-top: 60px;
+  }
 
   $block-name:                &; // #{$block-name}__element
+
+  a {
+
+    &:not(.logo) {
+      color: inherit;
+      opacity: $opacity;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__inner {
+    padding-bottom: 40px;
+
+    @media (min-width: $screen-md) {
+      padding-bottom: 60px;
+    }
+  }
+
+  &__info-col {
+    @include col(xs, 12);
+    @include col(md, 4);
+    @include col(xl, 4);
+  }
+
+  &__nav-col {
+    @include col(xs, 12);
+    @include col(md, 4);
+    @include col(xl, 3);
+  }
+
+  &__contacts-col {
+    @include col(xs, 12);
+    @include col(md, 4);
+    @include col(xl, 5);
+  }
+
+  &__info,
+  &__nav,
+  &__nav-wrapper,
+  &__contacts {
+
+    @media (max-width: $screen-md - 1) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+
+    &--nav {
+
+      @media (min-width: $screen-xl) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        padding-right: 30px;
+      }
+    }
+  }
+
+  &__list-item {
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--nav {
+
+      @media (min-width: $screen-xl) {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 2px 0;
+  }
+
+  &__info {
+
+  }
+
+  &__address {
+    font-size: 14px;
+    opacity: $opacity;
+  }
+
+  &__address-line {
+    display: block;
+  }
+
+  &__nav-wrapper {
+
+  }
+
+  &__section-title {
+    margin-top: 40px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+
+  }
+
+  &__contacts {
+
+  }
+
+  &__section-col {
+    @include col(xs, 12);
+    //@include col(md, 4);
+    @include col(xl, 6);
+  }
 }

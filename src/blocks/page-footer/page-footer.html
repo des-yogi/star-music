@@ -1,11 +1,91 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-footer/page-footer.html')
-
 -->
 
-<footer class="page-footer" role="contentinfo">
-  page-footer
+<footer class="page-footer">
+  <div class="container  page-footer__inner" itemscope itemtype="https://schema.org/EntertainmentBusiness">
+
+    <meta itemprop="name" content="Star Music Events">
+    <meta itemprop="description" content="Organization of concerts and other entertainment activities">
+    <meta itemprop="logo" content="img/favicon-lg.png">
+    <meta itemprop="image" content="img/favicon-lg.png">
+    <meta itemprop="url" content="https://zantevenue.com/contacts">
+    <meta itemprop="priceRange" content="$$">
+
+    <div class="row">
+
+      <div class="page-footer__info-col">
+        <section class="page-footer__info">
+          <h6 class="visually-hidden">Наш адрес:</h6>
+          @@include('../../blocks/logo/logo.html', {
+            "addClass": "logo--footer"
+          })
+          <p class="page-footer__address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span class="page-footer__address-line" itemprop="streetAddress">Platres Road,</span>
+            <span class="page-footer__address-line" itemprop="addressLocality">Limassol Paramytha,</span>
+            <span itemprop="postalCode">4540</span>&ensp;<span itemprop="addressCountry">Cyprus</span>
+          </p>
+          <p class="page-footer__address">
+            <span class="page-footer__address-line">Concert venue</span>
+            <span class="page-footer__address-line">Event space</span>
+          </p>
+        </section>
+      </div>
+
+      <div class="page-footer__nav-col">
+        <section class="page-footer__nav-wrapper">
+          <h6 class="page-footer__section-title">Site Map</h6>
+          <nav class="page-footer__nav">
+            <ul class="list-nostyled  page-footer__list  page-footer__list--nav">
+              <li class="page-footer__list-item  page-footer__list-item--nav">
+                <a href="#" class="page-footer__link">Concerts</a>
+              </li>
+              <li class="page-footer__list-item  page-footer__list-item--nav">
+                <a href="#" class="page-footer__link">Gallery</a>
+              </li>
+              <li class="page-footer__list-item  page-footer__list-item--nav">
+                <a href="#" class="page-footer__link">About</a>
+              </li>
+              <li class="page-footer__list-item  page-footer__list-item--nav">
+                <a href="#" class="page-footer__link">Archive</a>
+              </li>
+              <li class="page-footer__list-item  page-footer__list-item--nav">
+                <a href="#" class="page-footer__link">Contacs</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+
+      <div class="page-footer__contacts-col">
+        <section class="page-footer__contacts">
+          <h6 class="page-footer__section-title">Contact Us</h6>
+
+          <div class="row">
+            <div class="page-footer__section-col">
+              <ul class="list-nostyled  page-footer__list">
+                <li class="page-footer__list-item">
+                  <a class="page-footer__link" href="tel:+4055550128">
+                    <span itemprop="telephone">(405) 555-01282</span>
+                  </a>
+                </li>
+                <li class="page-footer__list-item">
+                  <a class="page-footer__link" href="mailto:hello@starmusic.com">
+                    <span itemprop="email">hello@starmusic.com</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__section-col">
+              @@include('../../blocks/socials/socials.html', {
+                "addClass": "socials--footer"
+              })
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </div>
+  @@include('../../blocks/copyrights/copyrights.html')
 </footer>
