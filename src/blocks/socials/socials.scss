@@ -30,4 +30,17 @@
     justify-content: center;
     margin-top: 40px;
   }
+
+  &--footer {
+    margin-top: 40px;
+
+    @media (max-width: $screen-md - 1) {
+      justify-content: center;
+    }
+
+    @media (min-width: $screen-xl) {
+      justify-content: flex-end;
+      margin-top: 0;
+    }
+  }
 }

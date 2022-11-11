@@ -35,9 +35,11 @@
   &--footer {
 
     svg {
+      width: 72px !important;
+      height: 64px !important;
 
       #text {
-        fill: $white;
+        fill: $white !important;
         transition: fill $transition-time;
       }
     }
