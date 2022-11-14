@@ -92,10 +92,6 @@
     padding: 2px 0;
   }
 
-  &__info {
-
-  }
-
   &__address {
     font-size: 14px;
     opacity: $opacity;
@@ -105,27 +101,14 @@
     display: block;
   }
 
-  &__nav-wrapper {
-
-  }
-
   &__section-title {
     margin-top: 40px;
     margin-bottom: 18px;
     text-transform: uppercase;
   }
 
-  &__nav {
-
-  }
-
-  &__contacts {
-
-  }
-
   &__section-col {
     @include col(xs, 12);
-    //@include col(md, 4);
     @include col(xl, 6);
   }
 }

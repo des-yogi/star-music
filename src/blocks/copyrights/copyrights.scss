@@ -46,6 +46,12 @@
     white-space: nowrap;
   }
 
+  &__help-link {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 1em;
+  }
+
   &__dev {
     display: flex;
     align-items: center;

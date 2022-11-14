@@ -5,6 +5,11 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__title {
+    width: 100%;
+    text-transform: uppercase;
+  }
+
   &__list {
     display: inline-flex;
     align-items: center;

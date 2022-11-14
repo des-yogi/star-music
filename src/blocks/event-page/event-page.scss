@@ -1,9 +1,48 @@
-// В этом файле должны быть стили для БЭМ-блока event-page, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .event-page {
+  margin-bottom: 80px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 120px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__title,
+  &__colored {
+    text-transform: uppercase;
+  }
+
+  &__colored {
+    color: $secondary-color;
+  }
+
+  &__hero {
+    margin-bottom: 40px;
+    border-radius: $border-radius--16;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__content-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+  }
+
+  &__sidebar-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 4);
+    margin-bottom: 80px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      order: 1;
+    }
+  }
 }
