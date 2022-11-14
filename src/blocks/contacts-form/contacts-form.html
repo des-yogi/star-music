@@ -1,14 +1,89 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/contacts-form/contacts-form.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="contacts-form">content</div>
-
 -->
+
+<section class="contacts-form">
+  <h2 id="contactForm" class="contacts-form__title">
+    <span>Any questions?</span>
+    Drop us a line
+  </h2>
+
+  <form class="contacts-form__form" action="" method="post" aria-labelledby="contactForm">
+    <div class="row">
+
+      <div class="contacts-form__form-col">
+        <label class="field-text">
+          <span class="field-text__name">First Name&thinsp;*</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="name" value="">
+            <span class="field-text__help-text error"></span>
+          </span>
+        </label>
+      </div>
+
+      <div class="contacts-form__form-col">
+        <label class="field-text">
+          <span class="field-text__name">Surname&thinsp;*</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="surname" value="">
+            <span class="field-text__help-text error"></span>
+          </span>
+        </label>
+      </div>
+
+      <div class="contacts-form__form-col">
+        <label class="field-text">
+          <span class="field-text__name">Email&thinsp;*</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="email" name="email" value="">
+            <span class="field-text__help-text error"></span>
+          </span>
+        </label>
+      </div>
+
+      <div class="contacts-form__form-col">
+        <label class="field-text">
+          <span class="field-text__name">Phone&thinsp;*</span>
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="tel" name="tel" value="">
+            <span class="field-text__help-text error"></span>
+          </span>
+        </label>
+      </div>
+
+    </div>
+
+    <label class="field-text">
+      <span class="field-text__name">Message&thinsp;*</span>
+      <span class="field-text__input-wrap">
+        <textarea class="field-text__input" name="message" placeholder="Write here…"></textarea>
+        <span class="field-text__help-text error"></span>
+      </span>
+    </label>
+
+    <div class="contacts__recaptcha">reCaptcha will be here…</div>
+
+    <div class="contacts-form__agreement">
+      <div class="row">
+
+        <div class="contacts-form__agreement-col">
+          <div class="field-checkbox">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" name="agreement" value="" checked>
+              <span class="field-checkbox__name-text">I agree to receive communications from Createx Online School</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="contacts-form__agreement-col">
+          <div class="field-actions">
+            <!-- <div class="field-actions__text">* — обязательные поля</div> -->
+            <button class="btn" type="submit" name="submit" style="width:100%;">Submit</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </form>
+</section>

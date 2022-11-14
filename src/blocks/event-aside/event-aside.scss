@@ -1,9 +1,63 @@
-// В этом файле должны быть стили для БЭМ-блока event-aside, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .event-aside {
+  padding: 40px 32px;
+  box-shadow: $shadow;
+  border-radius: $border-radius--32;
+
+  @media (min-width: $screen-xl) {
+    position: sticky;
+    top: 1em;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__date-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 12);
+    margin-bottom: 32px;
+  }
+
+  &__price-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 12);
+  }
+
+  &__subtitle {
+    margin: 0 0 4px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__address {
+    margin: 0 0 32px;
+    font-size: 18px;
+  }
+
+  &__date,
+  &__time {
+    display: block;
+  }
+
+  &__date,
+  &__price-num {
+    font-size: 24px;
+    font-weight: 600;
+    color: $main-color;
+  }
+
+  &__time {
+    margin-top: 6px;
+    font-size: 14px;
+  }
+
+  &__price-info {
+    margin: 0 0 32px;
+    color: $text-muted;
+  }
+
+  &__link {
+    width: 100%;
+  }
 }

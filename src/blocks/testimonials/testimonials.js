@@ -1,10 +1,11 @@
 (function(){
-  const testimonCarousel = document.querySelector('#testimonialsCarusel')
+  const testimonCarousel = document.querySelector('#testimonialsCarusel');
+  if (!testimonCarousel) return;
   const carousel = new bootstrap.Carousel(testimonCarousel, {
     ride: 'carousel',
     interval: 7000,
     wrap: true
-  })
+  });
 
   const avaLazy = new Blazy({
       selector: '.b-lazy'

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Star Music Home page</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        <article class="container  event-page">
+
+          <h1 class="event-page__title">
+            <span class="display-2">Oksana Muha</span>
+            <span class="event-page__colored">Songs Of The Unconquered Heart</span>
+          </h1>
+
+          <div class="embed-responsive  event-page__hero">
+            <picture>
+              <source srcset="img/event-2.webp" media="(min-width: 1200px)" type="image/webp">
+              <source srcset="img/event-2.jpg" media="(min-width: 1200px)">
+              <!-- от 1200 -> 1220x686px -->
+              <source srcset="img/event-2.webp" media="(min-width: 992px)" type="image/webp">
+              <source srcset="img/event-2.jpg" media="(min-width: 992px)">
+              <!-- 992-1200 -> 1710x962px -->
+              <source srcset="img/event-2.webp" media="(min-width: 768px)" type="image/webp">
+              <source srcset="img/event-2.jpg" media="(min-width: 768px)">
+              <!-- 768-9924 -> 1400x787px -->
+              <source srcset="img/event-2.webp" type="image/webp">
+              <img src="img/event-2.jpg" alt="Alt Text" width="720" height="405" loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <div class="row">
+
+            <div class="event-page__sidebar-col">
+              @@include('blocks/event-aside/event-aside.html')
+            </div>
+
+            <div class="event-page__content-col">
+              <div class="event-page__content">
+                <h2>About the event</h2>
+                <p class="event-page__introtext">At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
+
+                <p>Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.</p>
+
+                <div class="embed-responsive">
+                  <iframe class="b-lazy" width="1903" height="878" data-src="https://www.youtube.com/embed/5JtFLhKJqbM" title="Оксана Муха - Не забувай мене (Official video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <p>Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod.</p>
+                <p>At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
+                <p>Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.</p>
+
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus  facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in tot euismod vulputate etiam eros. Vel accumsan at elit neque, ipsum.</p>
+                </blockquote>
+
+                <p>Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque amet non fringilla blandit:</p>
+
+                <ul>
+                  <li>A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                    <ul>
+                       <li>1 list item</li>
+                       <li>2 list item</li>
+                       <li>3 list item</li>
+                     </ul>
+                  </li>
+                  <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                  <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                </ul>
+
+                <p>Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </article>
+
+      </main>
+
+      @@include('blocks/subscribe-block/subscribe-block.html')
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

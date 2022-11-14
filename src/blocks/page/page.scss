@@ -191,7 +191,6 @@ a {
   @include transition($transition-collapse);
 }
 
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -222,6 +221,10 @@ a {
 
   li::before {
     display: none;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -336,10 +339,20 @@ a {
   @media (min-width: $screen-md) {
     padding-top: 60px;
   }
+}
 
-  /* &--index {
+.text-content {
+  margin-bottom: 80px;
 
-  } */
+  @media (min-width: $screen-md) {
+    margin-bottom: 120px;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+  }
 }
 
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color, stroke=rgba(255, 255, 255, 0));
