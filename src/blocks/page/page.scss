@@ -353,6 +353,11 @@ a {
     @include col(md, 10);
     @include col(xl, 8);
   }
+
+  iframe {
+    width: 100%;
+    border: none;
+  }
 }
 
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color, stroke=rgba(255, 255, 255, 0));
