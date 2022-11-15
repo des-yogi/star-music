@@ -10,7 +10,7 @@
 
     svg {
 
-      #text {
+      .text {
         fill: $link-color--hover;
       }
     }
@@ -20,7 +20,7 @@
     width: 72px;
     height: 64px;
 
-    #text {
+    .text {
       fill: $secondary-color;
       transition: fill $transition-time;
     }
@@ -38,7 +38,7 @@
       width: 72px !important;
       height: 64px !important;
 
-      #text {
+      .text {
         fill: $white !important;
         transition: fill $transition-time;
       }

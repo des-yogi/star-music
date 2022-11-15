@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Star Music Archive</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        <div class="container  events  events--archive">
+          <h1 class="events__title">Archive</h1>
+
+          <ul class="list-nostyled  row  events__list">
+            <li class="events__item">
+              @@include('blocks/event-card/event-card.html', {
+                "imgSrc": "event-1",
+                "title": "Lyapis Trubetskoy",
+                "descr": "Sergei Mikhalok with the legendary band Lyapis Trubetskoy",
+                "linkText": "ΓΙΑ ΑΓΟΡΑ ΕΙΣΙΤΗΡΙΟΥ",
+                "linkDisabledStyle": "",
+                "ifArchive": "archive"
+              })
+            </li>
+
+            <li class="events__item">
+              @@include('blocks/event-card/event-card.html', {
+                "imgSrc": "event-2",
+                "title": "Oksana Muha",
+                "descr": "Sergei Mikhalok with the legendary band Lyapis Trubetskoy",
+                "linkText": "Купить билет",
+                "linkDisabledStyle": "",
+                "ifArchive": "archive"
+              })
+            </li>
+
+            <li class="events__item">
+              @@include('blocks/event-card/event-card.html', {
+                "imgSrc": "event-3",
+                "title": "Okean Elzy - Live Sound",
+                "descr": "Presentation of the secret album!",
+                "linkText": "Buy Ticket",
+                "linkDisabledStyle": "",
+                "ifArchive": "archive"
+              })
+            </li>
+
+            <li class="events__item">
+              @@include('blocks/event-card/event-card.html', {
+                "imgSrc": "event-4",
+                "title": "Swan Lake ballet",
+                "descr": "World ballet theater!",
+                "linkText": "sold out",
+                "linkDisabledStyle": "",
+                "ifArchive": "archive"
+              })
+            </li>
+          </ul>
+        </div>
+
+      </main>
+
+      @@include('blocks/subscribe-block/subscribe-block.html')
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

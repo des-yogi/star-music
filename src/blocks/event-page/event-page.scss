@@ -45,4 +45,12 @@
       order: 1;
     }
   }
+
+  &__content {
+
+    iframe {
+      width: 100%;
+      border: none;
+    }
+  }
 }

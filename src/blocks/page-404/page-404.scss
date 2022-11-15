@@ -1,9 +1,54 @@
-// В этом файле должны быть стили для БЭМ-блока page-404, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-404 {
+  margin-bottom: 80px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 120px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__text-col {
+    @include col(xs, 12);
+    //@include col(md, 8);
+    @include col(xl, 5);
+    text-align: center;
+
+    @media (max-width: $screen-xl - 1) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .h5 {
+      margin: 40px 0;
+    }
+
+    .btn {
+      min-width: 232px;
+    }
+
+    img {
+
+      @media (max-width: $screen-md - 1) {
+        width: 320px;
+        height: 122px;
+      }
+    }
+  }
+
+  &__img-col {
+    @include col(xs, 12);
+    //@include col(md, 12);
+    @include col(xl, 7);
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
