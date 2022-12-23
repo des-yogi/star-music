@@ -1,9 +1,53 @@
-// В этом файле должны быть стили для БЭМ-блока gallery, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .gallery {
+  margin-bottom: calc(120px - 30px);
 
   $block-name:                &; // #{$block-name}__element
 
+  &__title {
+    margin-bottom: 40px;
+
+    span {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+  }
+
+  &__section {
+    margin-bottom: calc(96px - 30px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__section-title {
+    margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+
+  &__section-date {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 24px;
+    font-size: 18px;
+    font-weight: initial;
+    color: $text-muted;
+  }
+
+  &__section-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(lg, 4);
+    margin-bottom: 30px;
+  }
+
+  &__section-img {
+    border-radius: $border-radius--8;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 }
