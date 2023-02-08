@@ -37,7 +37,8 @@
     "contacts-form": [],
     "page-404": [],
     "mobile-nav": [],
-    "events": []
+    "events": [],
+    "custom-text": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

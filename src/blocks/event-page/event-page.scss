@@ -12,8 +12,28 @@
     text-transform: uppercase;
   }
 
+  &__title {
+
+    & > .display-2 {
+      font-size: 48px;
+
+      @media (min-width: $screen-md) {
+        font-size: 56px;
+      }
+
+      @media (min-width: $screen-xl) {
+        font-size: 64px;
+      }
+    }
+  }
+
   &__colored {
+    font-size: 32px;
     color: $secondary-color;
+
+    @media (min-width: $screen-md) {
+      font-size: 48px;
+    }
   }
 
   &__hero {

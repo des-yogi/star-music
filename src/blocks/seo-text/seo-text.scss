@@ -25,4 +25,17 @@
   &__title {
     margin-top: 0;
   }
+
+  &--index {
+    text-align: initial;
+
+    .two-col {
+
+      @media (min-width: $screen-md) {
+        column-count: 2;
+        column-width: auto;
+        column-gap: 30px;
+      }
+    }
+  }
 }
