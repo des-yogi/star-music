@@ -1,0 +1,43 @@
+@keyframes ticker {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.ticker {
+  display: flex;
+  align-items: center;
+  background-color: rgba(75, 27, 129, 0.1);
+
+  $block-name:                &; // #{$block-name}__element
+
+  &:hover {
+
+    #{$block-name}__list {
+      animation-play-state: paused;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    animation: ticker 20s infinite linear;
+  }
+
+  &__item {
+    position: relative;
+    padding: 6px 0;
+    margin-right: 32px;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    white-space: nowrap;
+    color: $secondary-color;
+
+    &::after {
+      display: inline-block;
+      vertical-align: baseline;
+      content: "/";
+      margin-left: 30px;
+    }
+  }
+}
