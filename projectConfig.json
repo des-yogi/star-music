@@ -39,7 +39,8 @@
     "mobile-nav": [],
     "events": [],
     "custom-text": [],
-    "ticker": []
+    "ticker": [],
+    "faq": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
