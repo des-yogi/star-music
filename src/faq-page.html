@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Star Music FAQ page</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        <article class="container  text-content">
+
+          <div class="row">
+            <div class="text-content__col">
+              <h1>Заголовок 1</h1>
+              <p>At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
+              <p>Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non.</p>
+
+              <section class="faq" style="margin-top:60px;">
+                <h2 class="h4  faq__title">Faq</h2>
+
+                <div class="accordion  faq__inner" id="accordionFaq">
+
+                  <article class="accordion-item  faq__item">
+                    <h3 class="accordion-header  faq__item-title" id="faq-headingOne">
+                      <button class="accordion-button collapsed  faq__btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseOne" aria-expanded="false" aria-controls="faq-collapseOne">
+                        <span style="padding-right:20px;">Accordion Item #1</span>
+                      </button>
+                    </h3>
+                    <div id="faq-collapseOne" class="accordion-collapse collapse" aria-labelledby="faq-headingOne" data-bs-parent="#accordionFaq">
+                      <div class="accordion-body  faq__body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                  </article>
+
+                  <article class="accordion-item  faq__item">
+                    <h3 class="accordion-header  faq__item-title" id="faq-headingTwo">
+                      <button class="accordion-button collapsed  faq__btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseTwo" aria-expanded="false" aria-controls="faq-collapseTwo">
+                        <span style="padding-right:20px;">Accordion Item #2</span>
+                      </button>
+                    </h3>
+                    <div id="faq-collapseTwo" class="accordion-collapse collapse" aria-labelledby="faq-headingTwo" data-bs-parent="#accordionFaq">
+                      <div class="accordion-body  faq__body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                  </article>
+
+                  <article class="accordion-item  faq__item">
+                    <h3 class="accordion-header  faq__item-title" id="faq-headingThree">
+                      <button class="accordion-button collapsed  faq__btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseThree" aria-expanded="false" aria-controls="faq-collapseThree">
+                        <span style="padding-right:20px;">Accordion Item #3</span>
+                      </button>
+                    </h3>
+                    <div id="faq-collapseThree" class="accordion-collapse collapse" aria-labelledby="faq-headingThree" data-bs-parent="#accordionFaq">
+                      <div class="accordion-body  faq__body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+            </div>
+          </div>
+
+        </article>
+
+      </main>
+
+      @@include('blocks/subscribe-block/subscribe-block.html')
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
