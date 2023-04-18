@@ -1,9 +1,83 @@
-// В этом файле должны быть стили для БЭМ-блока about-article, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .about-article {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__intro-wrapper,
+  &__content-wrapper {
+    margin-bottom: 120px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 160px;
+    }
+  }
+
+  &__intro-text-col,
+  &__intro-logo-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 6);
+  }
+
+  &__intro-text-col {
+
+    @media (max-width: $screen-xl - 1) {
+      margin-bottom: 120px;
+    }
+  }
+
+  &__content-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+    margin-bottom: 120px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 160px;
+    }
+  }
+
+  &__content-img-col {
+    @include col(xs, 12);
+    @include col(xl, 8);
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    span {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+  }
+
+  &__intro {
+    font-size: $font-size--lead;
+    font-weight: 600;
+  }
+
+  &__intro-logo {
+
+    img {
+      display: block;
+      width: 100%;
+      transform: rotate(-8.14deg) scale(0.83);
+    }
+  }
+
+  &__content {
+
+    p:first-of-type {
+      font-size: $font-size--lead;
+      font-weight: 600;
+    }
+  }
+
+  &__content-img {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 }
