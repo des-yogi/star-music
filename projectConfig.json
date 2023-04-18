@@ -40,7 +40,8 @@
     "events": [],
     "custom-text": [],
     "ticker": [],
-    "faq": []
+    "faq": [],
+    "features": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

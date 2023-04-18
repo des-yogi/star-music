@@ -1,0 +1,132 @@
+.features {
+  margin-bottom: 120px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+
+
+    span {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0 90px;
+    }
+  }
+
+  &__card-col {
+    flex: 1 1;
+    flex-basis: 100%;
+
+    @media (min-width: $screen-md) {
+      flex-basis: calc(50% - 45px);
+      position: relative;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex-basis: calc(25% - 67.5px);
+
+      &:not(:last-child) {
+
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+          right: -45px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 85%;
+          background-position: center;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-image:
+            linear-gradient(to top,
+              rgba($border-color, 0),
+              rgba($border-color, 1) 15%,
+              $border-color 15%,
+              $border-color 85%,
+              rgba($border-color, 1) 85%,
+              rgba($border-color, 0));
+        }
+      }
+    }
+
+    @media (max-width: $screen-xl - 1) {
+      margin-bottom: 40px;
+    }
+
+    &:nth-last-child(1) {
+
+      @media (max-width: $screen-xl - 1) {
+        margin-bottom: 0;
+      }
+    }
+
+    &:nth-last-child(2) {
+
+      @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
+        margin-bottom: 0;
+      }
+    }
+
+    &:nth-child(odd) {
+
+      @media (min-width: $screen-md) and (max-width: $screen-xl - 1) {
+
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+          right: -45px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 85%;
+          background-position: center;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-image:
+            linear-gradient(to top,
+              rgba($border-color, 0),
+              rgba($border-color, 1) 15%,
+              $border-color 15%,
+              $border-color 85%,
+              rgba($border-color, 1) 85%,
+              rgba($border-color, 0));
+        }
+      }
+    }
+  }
+
+  &__card {
+    text-align: center;
+
+    img {
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 24px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 8px;
+  }
+}
