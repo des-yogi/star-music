@@ -1,0 +1,70 @@
+<!--DEV
+@ @include('blocks/img-slider/img-slider.html')
+-->
+
+<section id="imgCarusel" class="carousel slide  img-slider" data-bs-ride="true">
+  <h2 class="visually-hidden">Фото Галерея</h2>
+
+  <div class="carousel-indicators  img-slider__bullets">
+    <button class="img-slider__bullet  active" data-bs-target="#imgCarusel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+    <button class="img-slider__bullet" data-bs-target="#imgCarusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button class="img-slider__bullet" data-bs-target="#imgCarusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <a href="img/about-content.jpg" data-fancybox="gallery" title="Фото" class="embed-responsive  about-article__content-img">
+        <picture>
+          <source srcset="img/about-content.webp, img/about-content.webp 2x" media="(min-width: 1024px)" type="image/webp">
+          <source srcset="img/about-content.jpg, img/about-content.jpg 2x" media="(min-width: 1024px)">
+            <!-- 1012x569, 2024x1138 2x -->
+          <source srcset="img/about-content.webp, img/about-content.webp 2x" media="(min-width: 1024px)" type="image/webp">
+          <source srcset="img/about-content.jpg, img/about-content.jpg 2x" media="(min-width: 1024px)">
+            <!-- 1140x641, 2280x1282 2x -->
+          <source srcset="img/about-content.webp, img/about-content.webp 2x" media="(min-width: 768px)" type="image/webp">
+          <source srcset="img/about-content.jpg, img/about-content.jpg 2x" media="(min-width: 768px)">
+            <!-- 964x542, 1928x1084 2x -->
+          <source srcset="img/about-content.webp, img/about-content.webp 2x" media="(min-width: 480px)" type="image/webp">
+          <source srcset="img/about-content.jpg, img/about-content.jpg 2x" media="(min-width: 480px)">
+            <!-- 708x398, 1416x796 2x -->
+          <source srcset="img/about-content.webp, img/about-content.webp 2x" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/about-content.jpg, img/about-content.jpg 2x" media="(min-width: 360px)">
+            <!-- 440x247, 880x495 2x -->
+          <img src="img/about-content.jpg" class="b-lazy" alt="About img" width="2280" height="1282">
+        </picture>
+      </a>
+    </div>
+
+    <div class="carousel-item">
+      <a href="img/about-content.jpg" data-fancybox="gallery" title="Фото" class="embed-responsive  about-article__content-img">
+        <picture>
+          <source srcset="img/about-content.webp" type="image/webp">
+          <img src="img/about-content.jpg" class="b-lazy" alt="About" width="810" height="456">
+        </picture>
+      </a>
+    </div>
+
+    <div class="carousel-item">
+      <a href="img/about-content.jpg" data-fancybox="gallery" title="Фото" class="embed-responsive  about-article__content-img">
+        <picture>
+          <source srcset="img/about-content.webp" type="image/webp">
+          <img src="img/about-content.jpg" class="b-lazy" alt="About" width="810" height="456">
+        </picture>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="img-slider__btn-wrapper">
+    <button class="carousel-control-prev  img-slider__prev" data-bs-target="#imgCarusel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon  img-slider__icon  img-slider__icon--prev" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next  img-slider__next" data-bs-target="#imgCarusel" data-bs-slide="next">
+      <span class="carousel-control-next-icon  img-slider__icon  img-slider__icon--next" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</section>

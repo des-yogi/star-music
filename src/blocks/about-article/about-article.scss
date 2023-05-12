@@ -38,7 +38,8 @@
 
   &__content-img-col {
     @include col(xs, 12);
-    @include col(xl, 8);
+    @include col-offset(xl, 1);
+    @include col(xl, 10);
   }
 
   &__title {

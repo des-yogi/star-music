@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Star Music About Us</title>
   @@include('_include/page_head.html')
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 </head>
 
 <body>
@@ -54,12 +56,9 @@
             </div>
 
             <div class="about-article__content-img-col">
-              <div class="embed-responsive  about-article__content-img">
-                <picture>
-                  <source srcset="img/about-content.webp" type="image/webp">
-                  <img src="img/about-content.jpg" alt="About" width="810" height="456" loading="lazy">
-                </picture>
-              </div>
+
+              @@include('blocks/img-slider/img-slider.html')
+
             </div>
 
           </div>
@@ -85,6 +84,8 @@
   @@include('blocks/mobile-nav/mobile-nav.html')
 
   @@include('_include/page_bottom.html')
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
 </body>
 </html>

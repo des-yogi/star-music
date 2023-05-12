@@ -79,4 +79,16 @@
       border: none;
     }
   }
+
+  &__sidebar {
+
+    @media (min-width: $screen-xl) {
+      position: sticky;
+      top: 1em;
+    }
+
+    & > * + * {
+      margin-top: 40px;
+    }
+  }
 }

@@ -41,7 +41,9 @@
     "custom-text": [],
     "ticker": [],
     "faq": [],
-    "features": []
+    "features": [],
+    "share-links": [],
+    "img-slider": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
