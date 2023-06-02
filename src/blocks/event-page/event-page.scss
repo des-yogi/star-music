@@ -14,17 +14,17 @@
 
   &__title {
 
-    & > .display-2 {
-      font-size: 46px; // 48 было
+    // & > .display-2 {
+    //   font-size: 46px;
 
-      @media (min-width: $screen-md) {
-        font-size: 56px;
-      }
+    //   @media (min-width: $screen-md) {
+    //     font-size: 56px;
+    //   }
 
-      @media (min-width: $screen-xl) {
-        font-size: 64px;
-      }
-    }
+    //   @media (min-width: $screen-xl) {
+    //     font-size: 64px;
+    //   }
+    // }
   }
 
   &__colored {
@@ -38,7 +38,7 @@
     }
 
     @media (min-width: $screen-md) {
-      font-size: 32px; // 48
+      font-size: 28px; // 48
     }
   }
 

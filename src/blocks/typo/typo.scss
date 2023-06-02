@@ -93,21 +93,37 @@ h6 {
 .h1,
 h1 {
   font-size: $font-size--h1;
+
+  @media (max-width: $screen-xl - 1) {
+    font-size: $font-size--h1 * 0.7916;
+  }
 }
 
 .h2,
 h2 {
   font-size: $font-size--h2;
+
+  @media (max-width: $screen-xl - 1) {
+    font-size: $font-size--h2 * 0.8;
+  }
 }
 
 .h3,
 h3 {
   font-size: $font-size--h3;
+
+  @media (max-width: $screen-xl - 1) {
+    font-size: $font-size--h3 * 0.875;
+  }
 }
 
 .h4,
 h4 {
   font-size: $font-size--h4;
+
+  @media (max-width: $screen-xl - 1) {
+    font-size: $font-size--h4 * 0.9285;
+  }
 }
 
 .h5,
@@ -120,23 +136,23 @@ h6 {
   font-size: $font-size--h6;
 }
 
-.display-1,
-.display-2,
-.display-3 {
-  display: block;
-}
+// .display-1,
+// .display-2,
+// .display-3 {
+//   display: block;
+// }
 
-.display-1 {
-  font-size: $font-display-1;
-}
+// .display-1 {
+//   font-size: $font-display-1;
+// }
 
-.display-2 {
-  font-size: $font-display-2;
-}
+// .display-2 {
+//   font-size: $font-display-2;
+// }
 
-.display-3 {
-  font-size: $font-display-3;
-}
+// .display-3 {
+//   font-size: $font-display-3;
+// }
 
 .p,
 p,
